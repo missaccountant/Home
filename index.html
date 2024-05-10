@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Missaccountant</title>
+    <link rel="icon" href="images/logo.png">
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barrio&family=Goldman:wght@400;700&family=Inter:wght@100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Madimi+One&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Suravaram&family=Tac+One&family=Ubuntu+Sans+Mono:ital,wght@0,400..700;1,400..700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="container-fluid  mainnav">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="container  ">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <nav class="navbar  navbar-expand-lg">
+                                <a class="navbar-brand text-white" href="#">Miss Accountant</a>
+                                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                    aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+                                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                        <li class="nav-item">
+                                            <a class="nav-link active text-white" href="index.html"
+                                                aria-current="page">Home</a>
+                                        </li>
+                                        <li class="nav-item ">
+                                            <a class="nav-link text-white" href="#about">About</a>
+                                        </li>
+                                        <li class="nav-item ">
+                                            <a class="nav-link text-white" href="#services">Services</a>
+                                        </li>
+                                        <li class="nav-item ">
+                                            <a class="nav-link text-white" href="#contact">Contact</a>
+                                        </li>
+                                        <li class="nav-item ">
+                                            <a class="nav-link text-white" href="#testimonial"> testimonial</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="main">
+                                    <span style="font-size:25px;cursor:pointer" onclick="openNav()" class="text-white">
+                                        <i class="fa-solid fa-bars-staggered"></i></span>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="sidenav" id="sidenav">
+        <a href="#" onclick="closeNav()" class="fs-1">&times;</a>
+        <a href="index.html">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+        <a href="#testimonial">Our Testimonial</a>
+    </div>
+
+    <div class="container-fluid  ">
+
+        <div class="row  ">
+
+            <div class="col-lg-12 g-0">
+                <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="true"
+                    data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item " data-interval="800">
+                            <img src="images/1.webp " alt="..." width="100%">
+                        </div>
+                        <div class="carousel-item active" data-interval="800">
+                            <img src="images/2.webp" alt="..." width="100%">
+                        </div>
+                        <div class="carousel-item " data-interval="800">
+                            <img src="images/3.webp" alt="..." width="100%">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" id="services">
+        <div class="row mt-4">
+            <h3 class="text-center ">Our <span style="color: #bd821f;">Services</span> </h3>
+            <p class="text-center fs-6 ">Quality is our priority
+
+            </p>
+            <div class="col-lg-6 col-md-6 col-sm-6">
+                <div class="card border-0">
+                    <div class="card-body">
+                        <h2>Technical Services</h2>
+                        <ul>
+                            <li>MS Excel (vlookup and hlookup)</li>
+                            <li>TDS/TCS</li>
+                            <li>Payroll</li>
+                            <li>Income Tax Knowledge</li>
+                            <li>Prepare Online Sheet { Like as-Amazon, Flipkart, Messho etc }</li>
+                            <li>Update and Make Sale or Purchase Bill</li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-md-6 col-sm-6">
+                <div class="card border-0">
+                    <div class="card-body">
+                        <h2>Professional Services</h2>
+                        <ul>
+                            <li>Bills Make by Any Software { Like as-SARAL,BUSY,MARG,CLEAR TAX & TALLY PRIME }</li>
+                            <li>GSTR1/GSTR3b Return</li>
+                            <li>Sale & Purchase Entry</li>
+                            <li>Online Tax Return(GST/TDS)</li>
+                            <li>TCS Return</li>
+                            <li>Payroll For Salary</li>
+                            <li>E-commerce</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6  col-md-6 col-sm-6">
+                <div class="card border-0">
+                    <div class="card-body ">
+                        <h2>Get Registered</h2>
+                        <ul>
+                            <li>GST Registration</li>
+                            <li>MSME(UDHOG Registration)</li>
+                            <li>Food Licence Registration</li>
+                            <li>Provident Fund Registration</li>
+                            <li>Employee State Insurance Registration</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6  col-md-6 col-sm-6">
+                <div class="card border-0">
+                    <div class="card-body ">
+                        <h2>Government Services</h2>
+                        <ul>
+                            <li>Voter Card</li>
+                            <li>Pan Card</li>
+                            <li>Link Pan Card With Addhar Card</li>
+                            <li><a href="" class="" style="color: #bd821f;">Contact Us For more</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-lg-12 mt-5 g-0 ">
+                <div class="owl-carousel " id="owlfirst">
+                    <!-- Card1 -->
+
+
+                    <div class="item mb-5 mt-5  ">
+                        <img src="images/fssai.webp" alt="1" width="80%" loading="lazy"
+                            style="aspect-ratio: 4/2 ; object-fit:contain;">
+                    </div>
+                    <div class="item mb-5 mt-5  ">
+                        <img src="images/gst1.webp" alt="1" width="80%" loading="lazy"
+                            style="aspect-ratio: 4/2 ; object-fit:contain;">
+                    </div>
+                    <div class="item mb-5 mt-5  ">
+                        <img src="images/ESICJPEG1.webp" alt="1" width="80%" loading="lazy"
+                            style="aspect-ratio: 4/2 ; object-fit:contain;">
+                    </div>
+                    <div class="item mb-5 mt-5  ">
+                        <img src="images/msme.webp" alt="1" width="80%" loading="lazy"
+                            style="aspect-ratio: 4/2 ; object-fit:contain;">
+                    </div>
+                    <div class="item mb-5 mt-5  ">
+                        <img src="images/pfr.webp" alt="1" width="80%" loading="lazy"
+                            style="aspect-ratio: 4/2 ; object-fit:contain;">
+                    </div>
+                    <div class="item mb-5 mt-5  ">
+                        <img src="images/tds-logo2.png" alt="1" width="80%" loading="lazy"
+                            style="aspect-ratio: 4/2 ; object-fit:contain;">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-fluid footer">
+        <div class="row">
+            <div class="col-lg-12 text-center text-white">
+                <h3 class="mt-4">HAVE ANY QUERY?</h3>
+                <marquee behavior="" direction="">We provide various services like TDS/TCS, Income Tax, Trademark
+                    Registration, Food Licence/FSSAI, Udyog Registration/MSME, Trade Licence and many more.</marquee>
+
+                <h3 class="mt-3 mb-3">CALL @
+                    <a href="tel:8506982838" class="text-decoration-none"><strong style="color: #bd821f;">
+                            +91-8506982838</strong></a>
+                </h3>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container" id="about">
+        <div class="row mt-5">
+            <h3 class="text-center">About <span style="color:#bd821f ;">Us</span></h3>
+            <div class="col-lg-6 text-center">
+                <img src="images/girl.webp" width="80%" class="hero" alt="">
+            </div>
+            <div class="col-lg-6">
+<p class=" " style=" font-size: 14px;
+text-align: justify; line-height: 1.7rem !important ; margin-top: 65px;">Hello, I'm Nisha based in Delhi, India. I bring two years of experience in the field of accounting. I graduated from  Delhi University (SOL)with a degree in Bachelor of Commerce.
+   We provide various services like GST, Income Tax ,Company Registration, Trademark Registration, ESI & PF,  Food Licence/FSSAI, Udyog Registration/MSME, Trade Licence, ISO Certification and many more. We offer customized and on affordable pricing to suit your needs and goals. We have a dedicated team of experts who have good experience in their field to help you provide online and offline support services.
+    
+    My experience has given me exposure to diverse industries, allowing me to adapt quickly to new environments and regulations. I am committed to maintaining the highest standards of integrity and professionalism in all my work.
+    
+    I'm enthusiastic about leveraging my expertise to contribute to the financial success and growth of your organization. Feel free to reach out to discuss how my skills and experience can align with your accounting needs.</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-fluid counterbg ">
+        <div class="row justify-content-center ">
+
+            <div class="col-lg-3 aboutimg  col-md-6 mt-5 mb-5">
+                <div class="card text-center border-0 " style="background-color: transparent;">
+                    <div class="card-img">
+                        <img src="images/experience.png " alt="" class="" width="30%">
+                    </div>
+                    <h5>More Than</h5>
+                    <h1 class="counter" style="margin-top: -10px;">2</h1>
+                    <h3 style="margin-top: -10px;">
+                        Years Experience</h3>
+                </div>
+            </div>
+            <div class="col-lg-3  aboutimg col-md-6 mt-5 mb-5">
+                <div class="card text-center border-0" style="background-color: transparent;">
+                    <div class="card-img">
+                        <img src="images/customer.png" alt="" width="30%">
+                    </div>
+                    <h5>More Than</h5>
+                    <h1 class="counter" style="margin-top: -10px;">100</h1>
+                    <h3 style="margin-top: -10px;">
+                        Happy Clients</h3>
+                </div>
+            </div>
+            <div class="col-lg-3  aboutimg col-md-6 mt-5 mb-5">
+                <div class="card text-center border-0" style="background-color: transparent;">
+                    <div class="card-img">
+                        <img src="images/customer-service.png" alt="" width="30%">
+                    </div>
+                    <h5>More Than</h5>
+                    <h1 class="counter" style="margin-top: -10px;">50</h1>
+                    <h3 style="margin-top: -10px;">
+                        Professional Services</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="container">
+        <div class="row jus1tify-content-center">
+
+            <h3 class="text-center mt-4">Why <span style="color: #bd821f;">Choose Us</span> </h3>
+            <p class="text-center">We give best, Because you deserve best.</p>
+            <div class="col-lg-6 col-md-6">
+
+                
+                <p><i class="fa-sharp fa-solid fa-star" style="color: #bd821f;"></i> Delivery On time</p>
+                <p><i class="fa-sharp fa-solid fa-star" style="color: #bd821f;"></i> Best Consultation Services</p>
+                <p><i class="fa-sharp fa-solid fa-star" style="color: #bd821f;"></i> 24×7 Support</p>
+                <p><i class="fa-sharp fa-solid fa-star" style="color: #bd821f;"></i> 
+                    Affordable Rate</p>
+                <p><i class="fa-sharp fa-solid fa-star" style="color: #bd821f;"></i> End To End Compliance Solution</p>
+                <p><i class="fa-sharp fa-solid fa-star" style="color: #bd821f;"></i> Clients-focused Solutions</p>
+                    <p><i class="fa-sharp fa-solid fa-star" style="color: #bd821f;"></i>
+                        50+ Professionals Services</p>
+
+
+            </div>
+            <div class="col-lg-6 col-md-6 text-center">
+                <img src="images/second.webp" alt="" class="side" width="60%">
+            </div>
+        </div>
+    </div>
+    <div class="container mt-5">
+        <div class="row ">
+            <div class="col-lg-6 ">
+                <p>Need any help?</p>
+                <h3 style="margin-top: -20px;">
+                    <strong> Get in touch with us </strong>
+                </h3>
+                <div class="row mt-5">
+                    <div class="col-lg-2 col-md-2 text-center">
+                        <button class="btn contactbutton rounded-circle " style="width: 80px; height:80px; ">
+                            <img src="images/telephone.png" alt="" width="65%">
+                        </button>
+
+                    </div>
+                    <div class="col-lg-5 text-center mt-1 col-md-4 ">
+                        <p><strong>Have any question?</strong></p>
+                        <p>Free <a href="tel:8506982838" class="text-decoration-none text-dark">+91 8506982838</a></p>
+                    </div>
+                </div>
+
+                <div class="row mt-3">
+                    <div class="col-lg-2 col-md-2 text-center">
+                        <button class="btn contactbutton rounded-circle " style="width: 80px; height:80px; ">
+                            <img src="images/letter.png" alt="" width="65%">
+                        </button>
+
+                    </div>
+                    <div class="col-lg-5 text-center mt-1 col-md-4 ">
+                        <p><strong>Write email</strong></p>
+                        <p><a href="mailto:nishashakya0305@gmail.com" class="text-decoration-none text-dark">nishashakya0305@gmail.com</a></p>
+                    </div>
+                </div>
+
+                <div class="row mt-3">
+                    <div class="col-lg-2 col-md-2 text-center">
+                        <button class="btn contactbutton rounded-circle " style="width: 80px; height:80px; ">
+                            <img src="images/wp.png" alt="" width="65%">
+                        </button>
+
+                    </div>
+                    <div class="col-lg-5 text-center mt-1 col-md-4 ">
+                        <p><strong>Drop Message Any time</strong></p>
+                        <p> <a href="https://wa.me/918506982838" class="text-decoration-none text-dark">8506982838</a></p>
+
+                       
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-lg-6" id="contact">
+                <p>Contact With us Now</p>
+                <h3 style="margin-top: -20px;">
+                    <strong> Feel Free to Write Our Tecnology Experts </strong>
+
+                </h3>
+              
+                <form  action="https://formspree.io/f/mgegyayv"
+                method="POST" class="mt-5">
+                <input type="text" name="Name" id="Name" placeholder="Your Name" class="form-control rounded-2   shadow-none" style="outline-color: #bd821f; border: 2px solid #bd821f;" required autocomplete="off">
+
+                <input type="email" name="Email" id="email" style="outline-color: #bd821f; border: 2px solid #bd821f;" placeholder="Email Address" class="form-control rounded-2 mt-3 shadow-none" required autocomplete="off"> 
+                <input type="number" name="Number" id="number" style="outline-color: #bd821f; border: 2px solid #bd821f;" placeholder="Enter Phone" class="form-control mt-3 rounded-2 shadow-none" required autocomplete="off">
+                <textarea name="Message" id="Message" cols="30" style="outline-color: #bd821f; border: 2px solid #bd821f;" rows="3" class="form-control rounded-2 mt-3 shadow-none" placeholder="Write a Message" required autocomplete="off"></textarea>
+            
+                <button class="btn  w-100 rounded-pill mt-4 mb-2 text-white" style="background-color: #bd821f ;" type="submit">Sent</button>
+            </form>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container mb-5 mt-5" id="testimonial">
+        <div class="row justify-content-between">
+            <h3 class="text-center mb-3">Our Outstanding Review on <span style="color:#bd821f;">Instagram</span></h3>
+
+            <div class="col-lg-4 reviewimg  mt-3 col-md-6 text-center">
+                <img src="images/archit.webp" alt="" class="rounded-circle" width="30%">
+                <div class="d-flex justify-content-between align-items-center">
+
+                    <b class="mt-2">Archit Sharma</b>
+                    <span>
+                        <i class="fa-solid fa-star" style="color: #fabb05;"></i>
+                        <i class="fa-solid fa-star" style="color: #fabb05;"></i>
+                        <i class="fa-solid fa-star" style="color: #fabb05;"></i>
+                        <i class="fa-solid fa-star" style="color: #fabb05;"></i>
+                        <i class="fa-solid fa-star" style="color: #e6e6e6;"></i>
+                    </span>
+                </div>
+                <p>
+                    "❤️Thanks for your service regarding gst .. Really Quick and accurate .
+                    🔥🔥"
+                </p>
+            </div>
+
+
+            <div class="col-lg-4 reviewimg mt-3 col-md-6 text-center">
+                <img src="images/dikshika.webp" alt="" class="rounded-circle" width="30%">
+                <div class="d-flex justify-content-between align-items-center">
+                    <b class="mt-2">
+                        Dikshika Akhariya</b>
+                    <span>
+                        <i class="fa-solid fa-star" style="color: #fabb05;"></i>
+                        <i class="fa-solid fa-star" style="color: #fabb05;"></i>
+                        <i class="fa-solid fa-star" style="color: #fabb05;"></i>
+                        <i class="fa-solid fa-star" style="color: #fabb05;"></i>
+                        <i class="fa-solid fa-star" style="color: #e6e6e6;"></i>
+                    </span>
+                </div>
+                <p>
+                    "Dear Nisha,
+                    Aapne mera pan card apply Kiya tha or vo 7 days main hi aa gya thank you so much because mujhe vo
+                    urgent chaiye tha or vo meri expectations se pahle hi aa gya thank you very much 🥹❤️."
+                </p>
+            </div>
+
+            <div class="col-lg-4 reviewimg mt-3 col-md-6 text-center">
+                <img src="images/sadiya.webp" alt="" class="rounded-circle" width="30%">
+                <div class="d-flex justify-content-between align-items-center">
+                    <b class="mt-2">Sadiya</b>
+                    <span>
+                        <i class="fa-solid fa-star" style="color: #fabb05;"></i>
+                        <i class="fa-solid fa-star" style="color: #fabb05;"></i>
+                        <i class="fa-solid fa-star" style="color: #fabb05;"></i>
+                        <i class="fa-solid fa-star" style="color: #fabb05;"></i>
+                        <i class="fa-solid fa-star" style="color: #e6e6e6;"></i>
+                    </span>
+                </div>
+                <p>
+                    "Your work is done very accurately and on time.👍"
+                </p>
+            </div>
+
+
+
+        </div>
+    </div>
+
+
+    <!-- footer -->
+    <div class="container-fluid footer">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="container mt-5 mb-5 ">
+                    <div class="row ">
+                        <div class="col-lg-3 col-md-6">
+
+                            <img src="images/logo.png" width="20%" alt="">
+
+
+                            <p class="text-white mt-3" style="    font-size: 14px;
+                            text-align: justify;     line-height: 1.7rem !important">We provide various services like
+                                GST, Income Tax, Trademark Registration, Food
+                                Licence/FSSAI, Udyog Registration/MSME, Trade Licence and many more. We offer customized
+                                and on affordable pricing to suit your needs and goals.</p>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6">
+                            <h3 class="text-white"> USEFUL <span style="color: #bd821f;">LINKS</span></h2>
+                                <ul class="list-unstyled" style="    font-size: 14px;
+                            text-align: justify;     line-height: 1.7rem !important">
+                                    <li><a class="text-white text-decoration-none" href="index.html">Home</a></li>
+                                    <li><a class="text-white text-decoration-none" href="#about">About</a></li>
+                                    <li><a class="text-white text-decoration-none" href="#services">Services</a></li>
+                                    <li><a class="text-white text-decoration-none" href="#contact">Contact</a></li>
+                                    <li><a class="text-white text-decoration-none" href="#testimonial">Our Testimonial</a></li>
+                                </ul>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6">
+                            <h3 class="text-white">OUR <span style="color: #bd821f;">SERVICES</span></h2>
+                                <ul class="list-unstyled" style="    font-size: 14px;
+                            text-align: justify;     line-height: 1.7rem !important">
+                                    <li><a class="text-white text-decoration-none" href="https://wa.me/918506982838?text=I want GST ">GST Registration</a></li>
+                                    <li><a class="text-white text-decoration-none" href="https://wa.me/918506982838?text=Fill My Tcs Return">TCS Return</a></li>
+                                    <li><a class="text-white text-decoration-none" href="">Sale & Purchase Entry</a>
+                                    </li>
+                                    <li><a class="text-white text-decoration-none" href="https://wa.me/918506982838?text=Hi Missaccountant">Payroll</a></li>
+                                    <li><a class="text-white text-decoration-none" href="https://wa.me/918506982838?text=Hey ">GSTR1/GSTR3b Return</a></li>
+                                    <li><a class="text-white text-decoration-none" href="https://wa.me/918506982838?text=I want my Pan Card.">Pan Card</a></li>
+                                    <li><a class="text-white text-decoration-none" href="https://wa.me/918506982838?text=I Want my Voter Card.">Voter Card</a></li>
+                                </ul>
+                        </div>
+                       
+                        <div class="col-lg-3 col-md-6">
+                            <h3><span style="color: #bd821f;">CONTACT US</span></h3>
+                            <ul class="list-unstyled" style="    font-size: 14px;
+                            text-align: justify;     line-height: 1.7rem !important">
+                                <li class="mt-3"><a href="tel:8506982838" target="_blank"
+                                        class="text-decoration-none text-white"> <img src="images/phone-call.png"
+                                            width="10%"> 8506982838</a></li>
+                                <li class="mt-3"><a href="mailto: nishashakya0305@gmail.com" target="_blank"
+                                        class="text-decoration-none text-white"> <img src="images/gmail.png"
+                                            width="10%"> nishashakya0305@gmail.com</a></li>
+                                <li class="mt-3"><a href="https://www.instagram.com/missaccountant/" target="_blank"
+                                        class="text-decoration-none text-white"> <img src="images/instagram.png"
+                                            width="10%"> Missaccountant</a></li>
+                                <li class="mt-3"><a href="https://wa.me/918506982838" target="_blank"
+                                        class="text-decoration-none text-white"> <img src="images/whatsapp.png"
+                                            width="10%"> +91 8506982838 </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="style/main.js"></script>
+    <script src="style/owl.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"
+        integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"
+        integrity="sha512-d8F1J2kyiRowBB/8/pAWsqUl0wSEOkG5KATkVV4slfblq9VRQ6MyDZVxWl2tWd+mPhuCbpTB4M7uU/x9FlgQ9Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        $('.counter').counterUp({
+            delay: 10,
+            time: 1000
+        });
+    </script>
+
+    <script>
+        $('#owlfirst').owlCarousel({
+            loop: true,
+            margin: 10,
+            responsiveClass: true,
+            autoplayTimeout: 3000,
+            autoplay: true,
+            responsive: {
+                0: {
+                    items: 2,
+                    nav: true
+                },
+                600: {
+                    items: 3,
+                    nav: false
+                },
+                1000: {
+                    items: 4,
+                    nav: true,
+                    loop: true
+                }
+            }
+        });
+    </script>
+
+
+    <script src="bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="style/style.js"></script>
+
+
+
+</body>
+
+</html>

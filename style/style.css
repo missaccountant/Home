@@ -1,0 +1,161 @@
+body{
+  font-family: "Ubuntu Sans Mono", monospace;
+  scroll-behavior: smooth;
+ 
+}
+
+
+.mainnav{
+  background-color: #bd821f ;
+    
+    position: sticky;
+    top: 0;
+    z-index: 99;
+   
+}
+
+@media screen and (max-width:570px) {
+  .mainnav{
+    border-radius: 0px;
+  }
+ 
+}
+
+
+
+
+ @media screen and (min-width:995px) {
+    .main{
+        display: none;
+    }
+   
+}  
+
+
+
+@media screen and (max-width:995px) {
+    
+    .navbar-toggler{
+        display: none;
+    }
+    
+} 
+body {
+    font-family: "Lato", sans-serif;
+  }
+  
+  .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidenav a:first-child {
+    padding: 0 0 0 32px;
+  }
+  
+  .main {
+    transition: margin-left .5s;
+    padding: 16px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+  
+
+
+  .hero{
+    animation: up  2s ease-in-out infinite alternate-reverse both;
+
+}
+
+
+@keyframes up {
+  0%{
+        transform: translateY(15px);
+    }
+    100%{
+        transform: translateY(-15px);
+    }
+    
+}
+
+.footer{
+  background-color: rgb(118, 80, 15);
+}
+
+
+
+.counterbg{
+  background-image: url(../images/bg-light.webp);
+   background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+
+
+.side{
+  animation: side  2s ease-in-out infinite alternate-reverse both;
+
+}
+
+
+@keyframes side {
+0%{
+      transform: translatex(20px);
+  }
+  100%{
+      transform: translatex(-20px);
+  }
+  
+}
+
+.aboutimg:hover img{
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+
+.aboutimg img{
+  transition: 0.5s;
+
+}
+
+.reviewimg:hover img{
+  transform: rotateY(180deg);
+  transition: 1s;
+}
+
+.reviewimg img{
+  transition: 1s;
+
+}
+
+.contactbutton{
+  background-color: #bd821f;
+}
+.contactbutton:hover{
+  background-color: rgb(118, 80, 15);
+}
