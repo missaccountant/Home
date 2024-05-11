@@ -159,3 +159,18 @@ body {
 .contactbutton:hover{
   background-color: rgb(118, 80, 15);
 }
+
+
+.whatbut{
+  position: fixed;
+  top: 90%;
+  z-index: 999;
+  right: 3%;
+}
+
+
+@media screen and (max-width:425px) {
+  .now{
+    display: none;
+  }
+}
