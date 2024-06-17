@@ -6,14 +6,12 @@ body{
 
 
 .mainnav{
-  background-color: #bd821f ;
-    
+  background-color: #bd831fd7 ;    
     position: sticky;
     top: 0;
     z-index: 99;
-   
+    backdrop-filter: blur(3px); 
 }
-
 @media screen and (max-width:570px) {
   .mainnav{
     border-radius: 0px;
